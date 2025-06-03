@@ -27,16 +27,18 @@
         <section id="montacargas">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">2.5 TN Komatsu
+                    <div class="swiper-slide">
+                        <p>2.5 TN Komatsu</p>
                         <img src="komatsu.webp" alt="Montacargas Komatsu">
                     </div>
-                    <div class="swiper-slide">3TN unicarries
-                        <img src="3T unicarries.png" alt="">
+                    <div class="swiper-slide">
+                        <p>3TN Unicarries</p>
+                        <img src="3T unicarries.png" alt="Montacargas Unicarries">
                     </div>
-                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">
+                        <p>Slide 3</p>
+                    </div>
                 </div>
-
-                <!-- Botones del slider -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
@@ -44,32 +46,31 @@
         </section>
 
         <section class="bloque1">
-        <section class="nosotros" id="nosotros">
-            <h2>Sobre Nosotros</h2>
-            <p>
-                Brindamos al quiler de montacargas en Lima y a nivel nacional, con equipos desde 2.5 hasta 20 toneladas,
-                listos para trabajar con certificados y seguros actualizados. <br> <br>
+            <section class="nosotros" id="nosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>
+                    Brindamos alquiler de montacargas en Lima y a nivel nacional, con equipos desde 2.5 hasta 20 toneladas,
+                    listos para trabajar con certificados y seguros actualizados. <br><br>
 
-                Nuestro equipo está entrenado bajo normas de seguridad rigurosas, preparado para realizar traslados,
-                montajes y maniobras con eficiencia y responsabilidad. <br> <br>
+                    Nuestro equipo está entrenado bajo normas de seguridad rigurosas, preparado para realizar traslados,
+                    montajes y maniobras con eficiencia y responsabilidad. <br><br>
 
-                🕐 Alquiler flexible: por hora, día o mes. <br>
-                📞 Atención rápida y disponible las 24 horas.
-            </p>
+                    🕐 Alquiler flexible: por hora, día o mes. <br>
+                    📞 Atención rápida y disponible las 24 horas.
+                </p>
+            </section>
 
+            <section id="cotizacion" class="cotizacion">
+                <h2>Cotizacion</h2>
+                <input type="text" placeholder="Nombre de la empresa">
+                <input type="text" placeholder="Numero de RUC">
+                <input type="email" placeholder="Correo Electronico">
+                <input type="number" placeholder="Celular | Whatsapp">
+                <textarea rows="3" placeholder="Mensaje"></textarea>
+                <button>ENVIAR</button>
+            </section>
         </section>
 
-        <section id="cotizacion" class="cotizacion">
-            <h2>Cotizacion</h2>
-            <input type="text" placeholder="Nombre de la empresa">
-            <input type="text" placeholder="Numero de RUC">
-            <input type="email" placeholder="Correo Electronico">
-            <input type="number" placeholder="Celular | Whatsapp">
-            <textarea rows="3" placeholder="Mensaje"></textarea>
-            <button>ENVIAR</button>
-        </section> 
-        </section>
-        </section>
         <section class="mapa">
             <h2>Ubicacion</h2>
             <iframe
@@ -78,13 +79,10 @@
             </iframe>
         </section>
 
-
     </main>
 
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Inicializar Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30,
