@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Montacargas Canchachi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#">Contacto</a>
+        </nav>
+
+        <h1 class="titulo">MONTACARGAS CANCHACHI</h1>
+        <p class="subtitulo">Calidad, eficiencia y seguridad en cada operacion.</p>
+        <a href="#cotizacion" class="btn-cotizacion">Solicitar Cotizacion</a>
+    </header>
+
+    <main class="contenido">
+
+        <section id="montacargas">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">2.5 TN Komatsu
+                        <img src="Montacargas/komatsu.webp" alt="Montacargas Komatsu">
+                    </div>
+                    <div class="swiper-slide">3TN unicarries
+                        <img src="Montacargas/3T unicarries.png" alt="">
+                    </div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <!-- Puedes seguir agregando más slides -->
+                </div>
+
+                <!-- Botones del slider -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="bloque1">
+        <section class="nosotros" id="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Brindamos al quiler de montacargas en Lima y a nivel nacional, con equipos desde 2.5 hasta 20 toneladas,
+                listos para trabajar con certificados y seguros actualizados. <br> <br>
+
+                Nuestro equipo está entrenado bajo normas de seguridad rigurosas, preparado para realizar traslados,
+                montajes y maniobras con eficiencia y responsabilidad. <br> <br>
+
+                🕐 Alquiler flexible: por hora, día o mes. <br>
+                📞 Atención rápida y disponible las 24 horas.
+            </p>
+
+        </section>
+
+        <section id="cotizacion" class="cotizacion">
+            <h2>Cotizacion</h2>
+            <input type="text" placeholder="Nombre de la empresa">
+            <input type="text" placeholder="Numero de RUC">
+            <input type="email" placeholder="Correo Electronico">
+            <input type="number" placeholder="Celular | Whatsapp">
+            <textarea rows="3" placeholder="Mensaje"></textarea>
+            <button>ENVIAR</button>
+        </section>
+            
+            
+        </section>
+            
+        </section>
+     <!--    <section class="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Brindamos al quiler de montacargas en Lima y a nivel nacional, con equipos desde 2.5 hasta 20 toneladas,
+                listos para trabajar con certificados y seguros actualizados. <br> <br>
+
+                Nuestro equipo está entrenado bajo normas de seguridad rigurosas, preparado para realizar traslados,
+                montajes y maniobras con eficiencia y responsabilidad. <br> <br>
+
+                🕐 Alquiler flexible: por hora, día o mes. <br>
+                📞 Atención rápida y disponible las 24 horas.
+            </p>
+
+        </section>
+
+        <section id="cotizacion" class="cotizacion">
+            <h2>Cotizacion</h2>
+            <input type="text" placeholder="Nombre de la empresa">
+            <input type="text" placeholder="Numero de RUC">
+            <input type="email" placeholder="Correo Electronico">
+            <input type="number" placeholder="Celular | Whatsapp">
+            <textarea rows="3" placeholder="Mensaje"></textarea>
+            <button>ENVIAR</button>
+        </section>
+    -->
+        <section class="mapa">
+            <h2>Ubicacion</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3901.9579494493805!2d-77.0746644!3d-12.0464143!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c959415f873d%3A0xcb7af09cc4185edb!2sMontacargas%20Canchachi%20-%20Servicio%20de%20montacargas%20y%20maniobras!5e0!3m2!1ses!2spe!4v1748967892496!5m2!1ses!2spe"
+                class="mapa-iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Inicializar Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+</body>
+
+</html>

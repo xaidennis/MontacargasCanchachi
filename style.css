@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    background-image: url('/Montacargas/montacargas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 23px;
+    z-index: 10;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffa726;
+}
+
+.titulo {
+    font-family: serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.subtitulo {
+    font-family: serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #FFFF00;
+}
+
+.btn-cotizacion {
+    text-decoration: none;
+    margin-top: 20px;
+    background-color: #ffa726;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.7rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cotizacion:hover {
+    background-color: #ff6f00;
+    color: white;
+}
+
+.contenido {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    gap: 40px;
+    background-color: #000;
+    justify-content: center;
+}
+
+.bloque1{
+   display: flex;
+   background-color: #000;
+}
+
+.nosotros,
+.cotizacion {
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+    color: #fff;
+}
+
+.nosotros h2,
+.cotizacion h2 {
+    color: #ffa726;
+    margin-bottom: 15px;
+}
+
+.cotizacion input,
+.cotizacion textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.cotizacion button {
+    background-color: #ffa726;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cotizacion button:hover {
+    background-color: #ff6f00;
+    color: white;
+}
+
+.mapa {
+    flex-direction: column;
+    background-color: #eee;
+    height: 400px;
+    margin: 0 20px 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.mapa-iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+    border-radius: 10px;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 1280px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+    color: #ffa726;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 50px;
+    height: 50px;
+}
+
+.swiper-pagination-bullet {
+    background: #ffa726;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff6f00;
+}
